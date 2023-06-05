@@ -6,23 +6,18 @@ import '../models/bubo_category.dart';
 
 /// Original labels in german and bulgarian, english added as last value
 const labels = [
-  ["1", "Obst", "плодове", "vegetables", "ES"],
-  ["2", "Farben", "цветове", "colors"],
-  ["3", "Moebel", "мебели", "furniture"],
-  ["4", "Sachen", "дрехи", "clothes"],
-  ["5", "Spielzeug", "играчки", "toys"],
-  ["6", "Tiere", "животни", "animals"],
-  ["7", "Wilde Tiere", "диви животни", "wild animals"],
-  ["8", "Zahlen", "цифри", "digits"],
-  ["9", "Wetter", "времето", "weather"],
-  ["10", "Zu Hause", "вкъщи", "at home"],
-  ["11", "Natur", "природа", "nature"],
-  ["12", "Im Meer", "морето", "sea"],
-  ["13", "Am Strand", "на плажа", "on the beach"],
-  ["14", "Sport", "спорт", "sport"],
-  ["15", "Stadt", "град", "city"],
-  ["16", "Berufe", "професии", "professions"],
-  ["17", "Fahrzeuge", "транспрорт", "transport"]
+  ["1", "Obst", "Слънце", "vegetables", "ES"],
+  ["2", "Farben", "Меркурий", "colors"],
+  ["3", "Moebel", "Венера", "furniture"],
+  ["4", "Sachen", "Земя", "clothes"],
+  ["5", "Spielzeug", "Марс", "toys"],
+  ["6", "Tiere", "Юпитер", "animals"],
+  ["7", "Wilde Tiere", "Сатурн", "wild animals"],
+  ["8", "Zahlen", "Уран", "digits"],
+  ["9", "Wetter", "Нептун", "weather"],
+  ["10", "Zu Hause", "Луна", "at home"],
+  
+  
 ];
 
 ///

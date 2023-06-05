@@ -2,7 +2,7 @@ import 'package:circle_flags/circle_flags.dart';
 import 'package:flutter/material.dart';
 
 /// Available languages
-const languages = ['BG', 'US', 'DE', 'ES'];
+const languages = ['BG', 'US', 'DE'];
 
 ///
 /// Callback function definition that will be used to notify the parent widget

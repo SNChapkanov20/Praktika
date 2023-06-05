@@ -76,7 +76,8 @@ class _BuboHomePageState extends State<BuboHomePage> {
             bottom: 30,
             left: 30,
             width: 200,
-            child: Image.asset('assets/bubo_logo.png'),
+            child: Image.asset('assets/planet_logo.jpg'),
+            
           ),
         ],
       ),
