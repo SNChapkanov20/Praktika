@@ -110,7 +110,7 @@ class BuboCategoryViewer extends StatelessWidget {
       return GridView.count(
         mainAxisSpacing: 10,
         crossAxisSpacing: 0,
-        crossAxisCount: itemsPerRow,
+        crossAxisCount: 5,
         children: buboCategories.map((buboCategory) {
           return BuboCategoryListItem(language, buboCategory);
         }).toList(),
@@ -177,32 +177,27 @@ class BuboCategoryListItem extends StatelessWidget {
 
   const BuboCategoryListItem(this.language, this.category, {super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Column(children: [
-      Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(category.image, width: 250, fit: BoxFit.fill),
-          RotatedBox(
-            quarterTurns: 1,
-            child: Text(
-              category.translatedLabels[language]!,
-              style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30,
-                  color: Colors.white),
-            ),
-          )
-        ],
-      ),
-      Container(
-        height: 10,
-      )
-      //_viewWithContainer(),
-      //_viewWithStack(),
-    ]);
-  }
+ @override
+ Widget build(BuildContext context) {
+  return Column(children: [
+  Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+  children: [
+  Image.asset(category.image, width: 250, fit: BoxFit.fill),
+  Text(
+ category.translatedLabels[language]!,
+ style: const TextStyle(
+ fontWeight: FontWeight.bold,
+ fontSize: 30,
+ color: Colors.white),
+ ),
+ ],
+ ),
+ Container(
+ height: 10,
+    )
+  ]);
+ }
 
   Widget _viewWithStack() {
     return Stack(

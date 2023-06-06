@@ -6,9 +6,9 @@ import '../models/bubo_category.dart';
 
 /// Original labels in german and bulgarian, english added as last value
 const labels = [
-  ["1", "Obst", "Слънце", "vegetables", "ES"],
-  ["2", "Farben", "Меркурий", "colors"],
-  ["3", "Moebel", "Венера", "furniture"],
+  ["1", "Sonne", "Слънце", "Sun", "ES"],
+  ["2", "Quecksilber", "Меркурий", "Mercury"],
+  ["3", "Venus", "Венера", "Venus"],
   ["4", "Sachen", "Земя", "clothes"],
   ["5", "Spielzeug", "Марс", "toys"],
   ["6", "Tiere", "Юпитер", "animals"],
