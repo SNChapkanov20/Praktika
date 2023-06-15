@@ -6,7 +6,11 @@ import '../models/bubo_category.dart';
 
 /// Original labels in german and bulgarian, english added as last value
 const labels = [
+<<<<<<< HEAD
   ["1", "Sonne", "Слънце", "Sun"],
+=======
+  ["1", "Sonne", "Слънце", "Sun", "ES"],
+>>>>>>> 323364e05cbc23962190f9b449a8dccfc5b4577d
   ["2", "Quecksilber", "Меркурий", "Mercury"],
   ["3", "Venus", "Венера", "Venus"],
   ["4", "Erde", "Земя", "Earth"],
