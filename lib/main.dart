@@ -183,7 +183,7 @@ class BuboCategoryListItem extends StatelessWidget {
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
         children: [
-            Image.asset(category.image, width: 249.1, fit: BoxFit.fill),
+            Image.asset(category.image, width: 249, fit: BoxFit.fill),
             Text(
           category.translatedLabels[language]!,
           style: const TextStyle(
