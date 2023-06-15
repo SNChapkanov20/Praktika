@@ -6,16 +6,16 @@ import '../models/bubo_category.dart';
 
 /// Original labels in german and bulgarian, english added as last value
 const labels = [
-  ["1", "Obst", "Слънце", "vegetables", "ES"],
-  ["2", "Farben", "Меркурий", "colors"],
-  ["3", "Moebel", "Венера", "furniture"],
-  ["4", "Sachen", "Земя", "clothes"],
-  ["5", "Spielzeug", "Марс", "toys"],
-  ["6", "Tiere", "Юпитер", "animals"],
-  ["7", "Wilde Tiere", "Сатурн", "wild animals"],
-  ["8", "Zahlen", "Уран", "digits"],
-  ["9", "Wetter", "Нептун", "weather"],
-  ["10", "Zu Hause", "Луна", "at home"],
+  ["1", "Sonne", "Слънце", "Sun"],
+  ["2", "Quecksilber", "Меркурий", "Mercury"],
+  ["3", "Venus", "Венера", "Venus"],
+  ["4", "Erde", "Земя", "Earth"],
+  ["5", "Mars", "Марс", "Mars"],
+  ["6", "Jupiter", "Юпитер", "Jupiter"],
+  ["7", "Saturn", "Сатурн", "Saturn"],
+  ["8", "Uranus", "Уран", "Uranus"],
+  ["9", "Neptun", "Нептун", "Neptune"],
+  ["10", "Mond", "Луна", "Moon"],
   
   
 ];

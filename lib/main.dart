@@ -177,32 +177,27 @@ class BuboCategoryListItem extends StatelessWidget {
 
   const BuboCategoryListItem(this.language, this.category, {super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Column(children: [
-      Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+   @override
+    Widget build(BuildContext context) {
+      return Column(children: [
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset(category.image, width: 250, fit: BoxFit.fill),
-          RotatedBox(
-            quarterTurns: 1,
-            child: Text(
-              category.translatedLabels[language]!,
-              style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30,
-                  color: Colors.white),
-            ),
-          )
+            Image.asset(category.image, width: 249.1, fit: BoxFit.fill),
+            Text(
+          category.translatedLabels[language]!,
+          style: const TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 30,
+          color: Colors.white),
+          ),
         ],
       ),
       Container(
-        height: 10,
+      height: 10,
       )
-      //_viewWithContainer(),
-      //_viewWithStack(),
     ]);
-  }
+ }
 
   Widget _viewWithStack() {
     return Stack(
