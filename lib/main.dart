@@ -37,6 +37,11 @@ class BuboHomePage extends StatefulWidget {
 
 class _BuboHomePageState extends State<BuboHomePage> {
   String _language = 'bg';
+  Map<String, String> _languageTitles = {
+    'bg': 'Слънчева система',
+    'en': 'Solar system',
+    'de': 'Sonnensystem',
+  };
 
   @override
   Widget build(BuildContext context) {
@@ -49,41 +54,68 @@ class _BuboHomePageState extends State<BuboHomePage> {
           Container(
             constraints: const BoxConstraints.expand(),
             decoration: const BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage('assets/planet.jpg'),
-                    fit: BoxFit.cover)),
-            child: null,
+              image: DecorationImage(
+                image: AssetImage('assets/planet.jpg'),
+                fit: BoxFit.cover,
+              ),
+            ),
           ),
           Positioned(
-            top: 30,
-            bottom: 100,
+            top: 20,
+            left: 0,
+            right: 0,
+            child: Center(
+              child: Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 100.0, 
+                  vertical: 5.0,   
+                ),
+                color: const Color.fromARGB(255, 166, 166, 166).withOpacity(0.5), 
+                child: Text(
+                  _languageTitles[_language] ?? 'Solar system',
+                  style: TextStyle(
+                    fontSize: 38,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 100,
+            bottom: 150,
             left: 20,
             right: 20,
             child: BuboCategoryViewer(_language),
           ),
           Positioned(
-              right: 30,
-              bottom: 30,
-              width: width > height ? 300 : 54,
-              height: width < height ? 300 : 54,
-              child: LanguageSelector(width > height,
-                  onLanguageChange: (newLanguage) {
+            right: 30,
+            bottom: 30,
+            width: width > height ? 300 : 54,
+            height: width < height ? 300 : 54,
+            child: LanguageSelector(
+              width > height,
+              onLanguageChange: (newLanguage) {
                 setState(() {
                   _language = newLanguage.toLowerCase();
                 });
-              })),
+              },
+            ),
+          ),
           Positioned(
             bottom: 30,
             left: 30,
             width: 200,
             child: Image.asset('assets/planet_logo.jpg'),
-            
           ),
         ],
       ),
     );
   }
 }
+
+
 
 ///
 /// Category view for the main screen
