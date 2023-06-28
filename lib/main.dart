@@ -107,7 +107,7 @@ class _BuboHomePageState extends State<BuboHomePage> {
             bottom: 30,
             left: 30,
             width: 200,
-            child: Image.asset('assets/planet_logo.jpg'),
+            child: Image.asset('assets/planet_logo.png'),
           ),
         ],
       ),
@@ -147,7 +147,7 @@ class BuboCategoryViewer extends StatelessWidget {
           return BuboCategoryListItem(language, buboCategory);
         }).toList(),
       );
-
+  
       ///
       /// Manual grid implementation
       ///
