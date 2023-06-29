@@ -9,7 +9,7 @@
 
 
 
- ## <h1> What is Flutter</h1>
+ ## <h1>💡What is Flutter</h1>
 
 <p align="justify">
   Flutter is an open-source UI framework developed by Google for building natively compiled applications across multiple platforms, including mobile, web, and desktop. It allows developers to use a single codebase to create visually appealing and high-performance applications that can run on different operating systems.
@@ -24,9 +24,9 @@
 </p>
 
 ## 📖 Description
-
+<p align="justify">
 This is a flutter project through which you can see the planets in the solar system arranged according to how close they are to the sun (with the exception of the moon) the names of the different planets can be seen in three languages Bulgarian, English and German.
-
+</p>
 
 <br>
 
