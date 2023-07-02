@@ -14,7 +14,7 @@ class BuboApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Bubolechka 2',
+      title: 'Solar System',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -73,7 +73,7 @@ class _BuboHomePageState extends State<BuboHomePage> {
                 color: const Color.fromARGB(255, 166, 166, 166).withOpacity(0.5), 
                 child: Text(
                   _languageTitles[_language] ?? 'Solar system',
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 38,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,

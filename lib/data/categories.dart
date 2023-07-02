@@ -16,7 +16,9 @@ const labels = [
   ["8", "Uranus", "Уран", "Uranus"],
   ["9", "Neptun", "Нептун", "Neptune"],
   ["10", "Mond", "Луна", "Moon"],
-  
+  ["11", "Charon", "Харон", "Charon"],
+  ["12", "Io", "Ио", "Io"],
+  ["13", "Triton", "Тритон", "Triton"],
   
 ];
 
