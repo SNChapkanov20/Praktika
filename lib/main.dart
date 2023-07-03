@@ -2,6 +2,8 @@ import 'package:bubolechka2/data/categories.dart';
 import 'package:bubolechka2/language_selector.dart';
 import 'package:bubolechka2/models/bubo_category.dart';
 import 'package:flutter/material.dart';
+import 'dart:math';
+import 'dart:ui';
 
 void main() {
   runApp(const BuboApp());
@@ -35,6 +37,7 @@ class BuboHomePage extends StatefulWidget {
   State<BuboHomePage> createState() => _BuboHomePageState();
 }
 
+
 class _BuboHomePageState extends State<BuboHomePage> {
   String _language = 'bg';
   Map<String, String> _languageTitles = {
@@ -42,6 +45,15 @@ class _BuboHomePageState extends State<BuboHomePage> {
     'en': 'Solar system',
     'de': 'Sonnensystem',
   };
+
+  late BuboCategory _randomCategory;
+  bool _showRandomImage = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _randomCategory = getRandomCategory();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -67,10 +79,11 @@ class _BuboHomePageState extends State<BuboHomePage> {
             child: Center(
               child: Container(
                 padding: const EdgeInsets.symmetric(
-                  horizontal: 100.0, 
-                  vertical: 5.0,   
+                  horizontal: 100.0,
+                  vertical: 5.0,
                 ),
-                color: const Color.fromARGB(255, 166, 166, 166).withOpacity(0.5), 
+                color: const Color.fromARGB(255, 166, 166, 166)
+                    .withOpacity(0.5),
                 child: Text(
                   _languageTitles[_language] ?? 'Solar system',
                   style: const TextStyle(
@@ -109,11 +122,87 @@ class _BuboHomePageState extends State<BuboHomePage> {
             width: 200,
             child: Image.asset('assets/planet_logo.png'),
           ),
+          if (_showRandomImage)
+            Positioned.fill(
+              child: BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+                child: Container(
+                  color: Colors.black.withOpacity(0.5),
+                ),
+              ),
+            ),
+          if (_showRandomImage)
+            Positioned(
+              top: height / 2 - 250,
+              left: width / 2 - 200,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    _randomCategory.translatedLabels[_language] ?? 'Unknown',
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  Image.asset(
+                    _randomCategory.image,
+                    width: 400,
+                    height: 400,
+                    fit: BoxFit.cover,
+                  ),
+                ],
+              ),
+            ),
+          Positioned(
+            bottom: 30,
+            left: 0,
+            right: 0,
+            child: Center(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 10),
+                    child: ElevatedButton(
+                      onPressed: () {
+                        setState(() {
+                          _randomCategory = getRandomCategory();
+                          _showRandomImage = true;
+                        });
+                      },
+                      child: const Text('Generate Random Planet'),
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  ElevatedButton(
+                    onPressed: () {
+                      setState(() {
+                        _showRandomImage = false;
+                      });
+                    },
+                    child: Text('Remove Random Planet'),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.red,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
   }
+
+  BuboCategory getRandomCategory() {
+    final random = Random();
+    return buboCategories[random.nextInt(buboCategories.length)];
+  }
 }
+
+
 
 
 
