@@ -25,7 +25,7 @@
 
 ## 📖 Description
 <p align="justify">
-This is a flutter project through which you can see the planets in the solar system arranged according to how close they are to the sun (with the exception of the moon) the names of the different planets can be seen in three languages Bulgarian, English and German.
+My project is a flutter application through which one can observe pictures of the planets and some of their moons in the solar system. Planets are ordered by how close they are to the sun, excluding moons. You can see the names of the planets and moons in three different languages - Bulgarian, English and German.
 </p>
 
 <br>
