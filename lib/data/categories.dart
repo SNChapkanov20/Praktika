@@ -19,6 +19,8 @@ const labels = [
   ["11", "Charon", "Харон", "Charon"],
   ["12", "Io", "Ио", "Io"],
   ["13", "Triton", "Тритон", "Triton"],
+  ["14", "Enceladus", "Енцелад", "Enceladus"],
+  ["15", "Europa", "Европа", "Europe"],
   
 ];
 
