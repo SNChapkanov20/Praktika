@@ -6,7 +6,14 @@
 </p>
 
 <h1 align="center">Solar System</h1>
-
+<br>
+<p align = "center">
+    <img src = "https://img.shields.io/github/commit-activity/t/SNChapkanov20/Praktika?style=for-the-badge&color=%2355f2ed">
+    <img src = "https://img.shields.io/github/last-commit/SNChapkanov20/Praktika?style=for-the-badge&color=%23de2514">
+    <img src = "https://img.shields.io/github/contributors/SNChapkanov20/Praktika?style=for-the-badge&color=%230d9e69">
+    <img src = "https://img.shields.io/github/repo-size/SNChapkanov20/Praktika?style=for-the-badge&color=%23ffab2e">
+    
+<hr></p>
 
 
  ## <h1>💡What is Flutter</h1>
@@ -39,4 +46,14 @@ My project is a flutter application through which one can observe pictures of th
 - <img alt="Html" width="25px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Cmake.svg/1200px-Cmake.svg.png"> [CMake](https://cmake.org/) 
  
 
+## ⚙ Installation
+```
+You can download the project by using the green "Code" button.
 
+Or by pasting the following code in your CMD:
+git clone https://github.com/SNChapkanov20/Praktika.git
+```
+
+ ## 📄 Documents
+      
+- [Word Documentation](https://github.com/SNChapkanov20/Praktika/blob/main/Solar%20System%20-%20Documentation.docx)
